@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html><!-- <![endif]-->
+<head>
+	<title>Pasterz</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	
+	<!-- 
+	**********************************************************
+	In development, use the LESS files and the less.js compiler
+	instead of the minified CSS loaded by default.
+	**********************************************************
+	<link rel="stylesheet/less" href="../assets/less/admin/module.admin.page.index.less" />
+	-->
+	
+		<!--[if lt IE 9]><link rel="stylesheet" href="../assets/components/library/bootstrap/css/bootstrap.min.css" /><![endif]-->
+	<link rel="stylesheet" href="../assets/css/admin/module.admin.page.index.min.css" />
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="../assets/components/library/jquery/jquery.min.js?v=v1.2.3"></script>
+<script src="../assets/components/library/jquery/jquery-migrate.min.js?v=v1.2.3"></script>
+<script src="../assets/components/library/modernizr/modernizr.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/less-js/less.min.js?v=v1.2.3"></script>
+<script src="../assets/components/modules/admin/charts/flot/assets/lib/excanvas.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/browser/ie/ie.prototype.polyfill.js?v=v1.2.3"></script>
+<script src="../assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?v=v1.2.3"></script>	
+</head>
+<body class="">
+
+		<div class="navbar navbar-fixed-top navbar-primary main" role="navigation">
+    
+    <div class="navbar-header pull-left">
+        <div class="navbar-brand">
+            <div class="pull-left">
+                <a href="" class="toggle-button toggle-sidebar btn-navbar"><i class="fa fa-bars"></i></a>
+            </div>
+            <a href="index.html?lang=en" class="appbrand innerL">PASTERZ</a>
+        </div>
+    </div>
+  
+    <ul class="nav navbar-nav navbar-left">
+        <li class=" hidden-xs">
+            <form class="navbar-form navbar-left " role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Szukaj w wyszukiwarce"/>
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-inverse"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle user" data-toggle="dropdown"> <img src="../assets/images/people/35/8.jpg" alt="" class="img-circle"/><span class="hidden-xs hidden-sm"> ks. Adrian Pasterz</span> <span class="caret"></span></a>
+            <ul class="dropdown-menu list pull-right ">
+                <li><a href="#">Profil <i class="fa fa-user pull-right"></i></a></li>
+                <li><a href="#">Edytuj Konto <i class="fa fa-pencil pull-right"></i></a></li>
+                <li><a href="#">Pomoc <i class="fa fa-question-circle pull-right"></i></a></li>
+                <li><a href="#">Wyloguj <i class="fa fa-sign-out pull-right"></i></a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+        <li class="dropdown notification">
+            <a href="#" class="dropdown-toggle menu-icon" data-toggle="dropdown"><i class="fa fa-fw fa-envelope-o"></i><span class="badge badge-primary">2</span></a>
+            <ul class="dropdown-menu inbox">
+                <li class="headline">Inbox</li>
+                <li><input type="text" class="form-control border-none" placeholder="Szukaj parafii/księdza" /></li>
+                <li>
+                    <div class="media">
+                        <a class="pull-left" href="#"><img src="../assets/images/people/50/8.jpg" alt="" class="img-circle media-object"></a>
+                        <div class="media-body">
+                            <a href="" class="strong text-primary"> <i class="fa fa-circle"></i> ks. Adrian Pasterz</a> <span>(2)</span><span class="pull-right time-email">10:20</span>
+                            <div class="clearfix"></div>
+                            Moja testowa wiadomość
+                        </div>
+                    </div>    
+                </li>
+                <li>
+                    <div class="media">
+                        <a class="pull-left" href="#"><img src="../assets/images/people/50/3.jpg" alt="" class="img-circle media-object"></a>
+                        <div class="media-body">
+                            <a href="" class="strong text-primary">siostra Joanna Częstochowa</a><span>(1)</span><span class="pull-right time-email">06:48 </span>
+                            <div class="clearfix"></div>
+                            Proszę o informacje czy wywiesiliście komunikat w parafii
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown notification hidden-sm hidden-md">
+            <a href="#" class="dropdown-toggle menu-icon" data-toggle="dropdown"><i class="fa fa-fw fa-exclamation-circle"></i><span class="badge badge-info">2</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Informacja z KURII</a></li>
+                <li><a href="#">Inna akacja
+				</a></li>
+            </ul>
+        </li>
+         <li class="dropdown notification hidden-sm hidden-md">
+            <a href="#" class="dropdown-toggle menu-icon" data-toggle="dropdown"><i class="fa fa-fw fa-dropbox"></i><span class="badge badge-success badge-icon"><i class="fa fa-check"></i></span></a>
+            <ul class="dropdown-menu dropbox list">
+                <li class="headline">
+                   <div class="row">
+                       <div class="col-md-6">Zsynchronizowane dane</div>
+                       <div class="col-md-6">
+                           <a href="">Ustawienia <i class="fa fa-cog"></i></a>
+                       </div>
+                   </div>
+                </li>
+                <li class="clean info">Dane zsynchronizowane</li>
+                                <li>
+                    <ul class="media-list">
+                        <li class="media innerAll half">
+                            <a class="pull-left" href="#"></a>
+                            <div class="media-body margin-none">
+                                <a class="padding-none">Statystyki kurii</a>
+                                <div class="clearfix"></div>
+                                <em>22 minuty temu</em>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                                
+                </li>
+                               
+                              
+                            </ul>
+       
+        <li><a href="" class="menu-icon"><i class="fa fa-sign-out"></i></a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+	
+	<div id="menu" class="hidden-print hidden-xs">
+	<div class="sidebar sidebar-inverse">
+		<div class="user-profile media innerAll">
+			<a href="" class="pull-left"><img src="../assets/images/people/50/8.jpg" alt="" class="img-circle"><span class="badge badge-primary">2</span></a>
+			<div class="media-body">
+				<a href="" class="strong">ks. Adrian Pasterz</a>
+				<p class="text-success"><i class="fa fa-fw fa-circle"></i>Status: Dostępny</p>
+			</div>
+			<ul>
+				<li class="active"><a href=""><i class="fa fa-fw fa-user"></i></a></li>
+				<li><a href=""><i class="fa fa-fw fa-envelope"></i></a></li>
+				<li><a href=""><i class="fa fa-fw fa-lock"></i></a></li>
+			</ul>
+		</div>
+		<div class="sidebarMenuWrapper">
+			<ul class="list-unstyled">
+				<li class="active"><a href="###"><i class=" icon-projector-screen-line"></i><span>Sytuacja kurii</span></a></li>
+				<li class="hasSubmenu">
+					<a href="#" data-target="#menu-style" data-toggle="collapse"><i class="icon-compose"></i><span>Dobra kurri</span></a>
+					<ul class="collapse" id="menu-style">
+						<li><a href="#">Kościoły zabytkowe</a></li>
+						<li><a href="#">Tereny pod zabudowę duszpasterską</a></li>
+						<li><a href="#">Pozostałe</a></li>
+					</ul>
+				</li>	
+				
+				<li><a href="#"><i class="icon-user-1"></i><span>Duszpasterze</span></a></li>
+				<li class="hasSubmenu">
+					<a href="#" data-target="#support" data-toggle="collapse"><i class="icon-compose"></i><span>Parafie</span></a>
+					<ul class="collapse " id="support">
+						<li><a href="#"><i class="icon-comment-typing"></i><span>Poznań</span></a></li>
+						<li><a href="#"><i class="icon-comment-typing"></i><span>Suchy Las</span></a></li>
+						<li><a href="#"><i class="icon-comment-typing"></i><span>Września</span></a></li>
+						<li><a href="#"><i class="icon-comment-typing"></i><span>Turek</span></a></li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="  icon-comment-typing"></i><span>Uroczystości</span></a></li>
+
+
+	
+				
+
+
+				
+
+			
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+	<div id="content"><div class="heading-buttons bg-white border-bottom innerAll">
+	<h1 class="content-heading padding-none pull-left">Parafie</h1>
+	<div class="clearfix"></div>
+</div>
+	<div class="input-group input-lg ">
+	 	 <input type="text" class="form-control" placeholder="Search Contact">
+	  	<div class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></div>
+	</div>
+
+<div class="innerLR border-top">
+	
+	<div class="row row-merge">
+		
+							
+						<div class="col-md-6 bg-white border-bottom ">
+			<div class="row">
+
+				<div class="col-sm-9">
+					
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="../assets//images/people/100/2.jpg" alt="...">
+						</a>
+						<div class="media-body innerAll half">
+							 <h4 class="media-heading padding-none"><a href="">ks. Adam Nowak</a> </h4>
+							 <small class="text-success"><i class="fa fa-check"></i> Poznań</small> 
+							 <p>Parafia </p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-sm-3 ">
+					<div class="innerAll half text-right">
+						<div class="innerT half">
+							<a href="" class="btn btn-info btn-xs"><i class="fa fa-thumbs-up"></i> Obejrzyj </a>
+						</div>
+						<div class="innerT half">
+							<a href="" class="btn btn-primary btn-xs margin-top "><i class="fa fa-envelope-o"></i> Wiadomość</a>
+						</div>
+					</div>
+				</div>
+			
+				
+			</div>
+			
+			
+		</div>
+					
+						<div class="col-md-6 bg-white border-bottom ">
+			<div class="row">
+
+				<div class="col-sm-9">
+					
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="../assets//images/people/100/4.jpg" alt="...">
+						</a>
+						<div class="media-body innerAll half">
+							 <h4 class="media-heading padding-none"><a href="">ks. Andrzej Malinowski</a> </h4>
+							 <small class="text-success"><i class="fa fa-check"></i> Suchy Las</small> 
+							 <p>Parafia</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-sm-3 ">
+					<div class="innerAll half text-right">
+						<div class="innerT half">
+							<a href="" class="btn btn-info btn-xs"><i class="fa fa-thumbs-up"></i> Obejrzyj</a>
+						</div>
+						<div class="innerT half">
+							<a href="" class="btn btn-primary btn-xs margin-top "><i class="fa fa-envelope-o"></i> Wiadomość</a>
+						</div>
+					</div>
+				</div>
+			
+				
+			</div>
+			
+			
+		</div>
+						
+						<div class="col-md-6 bg-white border-bottom ">
+			<div class="row">
+
+				<div class="col-sm-9">
+					
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="../assets//images/people/100/6.jpg" alt="...">
+						</a>
+						<div class="media-body innerAll half">
+							 <h4 class="media-heading padding-none"><a href="">ks. Bogdan Jarząbek</a> </h4>
+							 <small class="text-success"><i class="fa fa-check"></i> Września</small> 
+							 <p>Parafia </p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-sm-3 ">
+					<div class="innerAll half text-right">
+						<div class="innerT half">
+							<a href="" class="btn btn-info btn-xs"><i class="fa fa-thumbs-up"></i> Obejrzyj</a>
+						</div>
+						<div class="innerT half">
+							<a href="" class="btn btn-primary btn-xs margin-top "><i class="fa fa-envelope-o"></i> Wiadomość</a>
+						</div>
+					</div>
+				</div>
+			
+				
+			</div>
+			
+			
+		</div>
+						
+						<div class="col-md-6 bg-white border-bottom ">
+			<div class="row">
+
+				<div class="col-sm-9">
+					
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="../assets//images/people/100/8.jpg" alt="...">
+						</a>
+						<div class="media-body innerAll half">
+							 <h4 class="media-heading padding-none"><a href="">ks Adrian Pasterz</a> </h4>
+							 <small class="text-success"><i class="fa fa-check"></i> Turek</small> 
+							 <p>Parafia</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-sm-3 ">
+					<div class="innerAll half text-right">
+						<div class="innerT half">
+							<a href="" class="btn btn-info btn-xs"><i class="fa fa-thumbs-up"></i> Obejrzyj</a>
+						</div>
+						<div class="innerT half">
+							<a href="" class="btn btn-primary btn-xs margin-top "><i class="fa fa-envelope-o"></i> Wiadomość</a>
+						</div>
+					</div>
+				</div>
+			
+				
+			</div>
+			
+			
+		</div>
+						
+
+	
+	
+		
+		</div>
+		<!-- // Content END -->
+		
+		<div class="clearfix"></div>
+		<!-- // Sidebar menu & content wrapper END -->
+		
+		
+		
+	</div>
+	<!-- // Main Container Fluid END -->
+	
+
+	
+
+	<!-- Global -->
+	<script>
+	var basePath = '',
+		commonPath = '../assets/',
+		rootPath = '../',
+		DEV = false,
+		componentsPath = '../assets/components/';
+	
+	var primaryColor = '#cb4040',
+		dangerColor = '#b55151',
+		infoColor = '#466baf',
+		successColor = '#8baf46',
+		warningColor = '#ab7a4b',
+		inverseColor = '#45484d';
+	
+	var themerPrimaryColor = primaryColor;
+	</script>
+	
+	<script src="../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/nicescroll/jquery.nicescroll.min.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/breakpoints/breakpoints.js?v=v1.2.3"></script>
+<script src="../assets/components/core/js/animations.init.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/holder/holder.js?v=v1.2.3"></script>
+<script src="../assets/components/core/js/sidebar.main.init.js?v=v1.2.3"></script>
+<script src="../assets/components/core/js/sidebar.collapse.init.js?v=v1.2.3"></script>
+<script src="../assets/components/helpers/themer/assets/plugins/cookie/jquery.cookie.js?v=v1.2.3"></script>
+<script src="../assets/components/core/js/core.init.js?v=v1.2.3"></script>	
+</body>
+</html>
